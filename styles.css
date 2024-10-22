@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.slide {
+    position: center;
+    width: 50%;
+    height: 20%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.show {
+    opacity: 1;
+}
